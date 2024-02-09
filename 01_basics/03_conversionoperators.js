@@ -48,9 +48,35 @@ conversion boolean
 "" => false
 */
 
-let number = 33
+/* let number = 33
 let stringNumber = String(number) // s will be capital
 console.log(stringNumber)
 console.log(typeof stringNumber)
+*/
+//****************OPERATIONS****************
+/* let num = 24
+let negnum = -num
+console.log(negnum) */
 
+//console.log(2+2)
+//console.log(2-2)
+//console.log(2*2)
+//console.log(2**2)
+//console.log(2/2)
+//console.log(2%2)
+
+let str1 = "Ayan"
+let str2 = " Maity"
+let joinString = str1 + str2
+//two type of string join
+console.log(joinString)
+console.log(str1 + str2)
+
+console.log("1" + 2)
+console.log(1 + "2")
+console.log("1" + 2 + 2) // not good practice
+console.log(1 +( 2 + "2")) //goog practice(using braces)
+console.log(((3 + 4) % 5) * 6)
+
+//   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
 
