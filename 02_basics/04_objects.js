@@ -50,3 +50,20 @@ console.log(Object.entries(tinderUser));
 
 // to find any values in object 
 console.log(tinderUser.hasOwnProperty('name')); // return true / false value
+
+
+//************* Destructure of object */
+
+const course ={
+
+    courseName : " javascript in hindi",
+    price : 999,
+    courseInstructor : "ayan"
+}
+
+// console.log(course.courseInstructor);  // every time if we want to print the object keys and values we need to write the same code again and again . so , here comes "object destructure" method . destructuring done with curly braces like {}.
+
+const {courseInstructor : instructor } = course // destructure
+// console.log(courseInstructor);
+console.log(instructor); // courseInstructor is a big name so we assign it to the name of instructor
+
