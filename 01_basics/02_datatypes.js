@@ -1,4 +1,4 @@
-"use strict" //treat all js code as nwe version of js
+"use strict" //treat all js code as new version of js
 
 console.log(3
 +3)// not the best practice, reduce the read abiity
