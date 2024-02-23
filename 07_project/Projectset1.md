@@ -2,7 +2,7 @@
 
 # Solution Code
 
-## Project1(background color chnanging)
+## Project1(background color changing)
 ``` javascript
 const button = document.querySelectorAll('.button')
 const body = document.querySelector('body')
