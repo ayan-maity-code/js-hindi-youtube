@@ -11,20 +11,26 @@
     <button id="stop"> Stop</button>
 </body>
 <script>
-    const sayDate = function(string){
-            console.log(string , Date.now())
+let change
+const sayDate = function(string){
+        console.log(string , Date.now())
+    }
+    
+const startPrinitig = function(){
+
+change =  setInterval(sayDate , 1000 , 'hi')
+
+
+}
+    
+document.querySelector("#start").addEventListener('click' , startPrinitig)
+
+    
+const stopPrinting = function(){
+    clearInterval(change)
+    console.log("stopped")
         }
-
-    document.querySelector("#start").addEventListener('click' , function(){
-
-        const change =  setInterval(sayDate , 1000 , 'hi')
-        
-        document.querySelector("#stop").addEventListener('click' , function(){
-        clearInterval(change)
-        console.log("stopped")
-        
-    })
-        })
+document.querySelector("#stop").addEventListener('click' , stopPrinting)
 
     // const change =  setInterval(sayDate , 1000 , 'hi')
     // clearInterval(change)
