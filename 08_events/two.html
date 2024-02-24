@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Or Code</h1>
+    <button id="stop"> Stop</button>
+</body>
+<script>
+    const sayAyan = function(){
+        console.log("Ayan")
+    }
+
+    // setTimeout(sayAyan , 2000) // sayAyan is a reference of function , and sayAyan() is used to execute a function
+
+    const textChange = function(){
+        document.querySelector('h1').innerHTML = "Welcome Ayan Maity"
+    }
+    const changeMe = setTimeout(textChange , 2000)
+
+    document.querySelector("#stop").addEventListener('click' , function(){
+        clearTimeout(changeMe)
+        console.log("stopped")
+    })
+</script>
+</html>
