@@ -45,3 +45,10 @@ step3 - arguments inject into this key word
 step4 - then return in the inside of the function
 
 */
+
+
+// fetch() notes
+/*
+
+
+*/
