@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name);  // lexical scope(inner function have the access to the outer function but the vice versa is not true)
+    //     }
+    //     displayName();
+    // }
+    // init()
+
+    // function outer(){
+    //     let username = "hitesh"
+    //     console.log("OUTER", secret);
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+
+
+    // function makeFunc() {
+    //     const name = "Mozilla"; //{ ---
+    //     function displayName() { //-- lex scope --
+    //         console.log(name); // ---}
+    //     }
+    //     return displayName; // return the lexical scope not scope
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+</script>
+
+<script>
+// interview question (real world example of lexical scope and closure)
+    function clickHandler(color){
+        return function(){
+            // document.body.style.backgroundColor = `${color}`
+            document.body.style.backgroundColor = `${color}`// lexical scope
+        }
+    }
+
+    document.querySelector("#orange").addEventListener("click" , clickHandler("orange"))
+    document.querySelector("#green").addEventListener("click" , clickHandler("green"))
+    // document.getElementById('orange').onclick = clickHandler("orange")
+    // document.getElementById('green').onclick = clickHandler("green")
+
+</script>
+</html>
